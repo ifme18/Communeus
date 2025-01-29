@@ -6,7 +6,7 @@ function Notifications({ communityId }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch notifications based on communityId
+    
     const fetchNotifications = async () => {
       try {
         const response = await fetch(`/api/notifications?community_id=${communityId}`);
